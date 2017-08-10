@@ -33,7 +33,7 @@ anova(lm(pres~coal+tar,data=cokes))
 
 #p.52
 machine <- factor(rep(1:3,each=6))# test
-technician <- factor(rep(1:3,3,each=2))
+technician <- factor(rep(1:3,3,each=2))#test!
 quality <- c(9,14,14,16,19,22,13,16,18,26,14,18,11,12,11,17,15,16)
 product <- data.frame(machine,technician,quality)
 anova(lm(quality~machine*technician,data=product))
